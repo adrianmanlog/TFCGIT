@@ -59,6 +59,7 @@ namespace TFCAdrianGalilea
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            BtHome_Click(sender, e);
         }
 
         private void BtHome_Click(object sender, EventArgs e)
