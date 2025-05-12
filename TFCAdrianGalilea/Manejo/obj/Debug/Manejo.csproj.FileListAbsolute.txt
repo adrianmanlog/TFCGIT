@@ -1,0 +1,16 @@
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\Manejo.dll
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\Manejo.pdb
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\Datos.dll
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\Datos.pdb
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\obj\Debug\Manejo.csproj.AssemblyReference.cache
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\obj\Debug\Manejo.csproj.CoreCompileInputs.cache
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\obj\Debug\Manejo.csproj.Up2Date
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\obj\Debug\Manejo.dll
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\obj\Debug\Manejo.pdb
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\EntityFramework.dll
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\Datos.dll.config
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\EntityFramework.xml
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\BouncyCastle.Cryptography.dll
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\itextsharp.dll
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\BouncyCastle.Cryptography.xml
+D:\ProyectosC#\TFCAdrianGalilea\Manejo\bin\Debug\itextsharp.xml
