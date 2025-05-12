@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94693AF3-E51C-4E39-88DA-EF0A0434033C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TFCAdrianGalilea</RootNamespace>
+    <AssemblyName>TFCAdrianGalilea</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>E:\ProyectosGithub\DI-ProyectoFinal\DI-ProyectoFinal\Data\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>E:\ProyectosGithub\DI-ProyectoFinal\DI-ProyectoFinal\Data\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ReaLTaiizor, Version=3.8.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReaLTaiizor.3.8.1.1\lib\net48\ReaLTaiizor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClienteCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FacturaCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAcerca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAcerca.Designer.cs">
+      <DependentUpon>formAcerca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAjustes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAjustes.Designer.cs">
+      <DependentUpon>formAjustes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHome.Designer.cs">
+      <DependentUpon>formHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSubmenu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSubmenu1.Designer.cs">
+      <DependentUpon>formSubmenu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSubmenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSubmenu2.Designer.cs">
+      <DependentUpon>formSubmenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.Designer.cs">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarClientes.Designer.cs">
+      <DependentUpon>InsertarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarFactura.Designer.cs">
+      <DependentUpon>InsertarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarReparaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarReparaciones.Designer.cs">
+      <DependentUpon>InsertarReparaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Landing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Landing.Designer.cs">
+      <DependentUpon>Landing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarClientes.Designer.cs">
+      <DependentUpon>ModificarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarFactura.Designer.cs">
+      <DependentUpon>ModificarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarReparaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarReparaciones.Designer.cs">
+      <DependentUpon>ModificarReparaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReparacionCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="ClienteCardControl.resx">
+      <DependentUpon>ClienteCardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaCardControl.resx">
+      <DependentUpon>FacturaCardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAcerca.resx">
+      <DependentUpon>formAcerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAjustes.resx">
+      <DependentUpon>formAjustes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHome.resx">
+      <DependentUpon>formHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSubmenu1.resx">
+      <DependentUpon>formSubmenu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSubmenu2.resx">
+      <DependentUpon>formSubmenu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarClientes.resx">
+      <DependentUpon>InsertarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarFactura.resx">
+      <DependentUpon>InsertarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarReparaciones.resx">
+      <DependentUpon>InsertarReparaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Landing.resx">
+      <DependentUpon>Landing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarClientes.resx">
+      <DependentUpon>ModificarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarFactura.resx">
+      <DependentUpon>ModificarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarReparaciones.resx">
+      <DependentUpon>ModificarReparaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReparacionCardControl.resx">
+      <DependentUpon>ReparacionCardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reparaciones %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Manejo\Manejo.csproj">
+      <Project>{4b740e21-15d0-4f5e-8350-87821f452331}</Project>
+      <Name>Manejo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reparaciones.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
