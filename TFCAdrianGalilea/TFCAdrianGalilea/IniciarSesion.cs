@@ -44,7 +44,7 @@ namespace TFCAdrianGalilea
 
             if (!dnisExistentes.Contains(dni))
             {
-                MessageBox.Show("El usuario no está registrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("DNI o Contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

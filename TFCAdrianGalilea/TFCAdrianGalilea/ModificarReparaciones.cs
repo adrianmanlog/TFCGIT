@@ -86,7 +86,7 @@ namespace TFCAdrianGalilea
 
         private void CargarDatosReparacion(ReparacionDTO reparacion)
         {
-            textBoxfecha.Text = reparacion.FechaDTO.ToString("yyyy-MM-dd");
+            textBoxfecha.Text = reparacion.FechaDTO.ToString("dd-MM-yyyy");
             textBoxModeloVehiculo.Text = reparacion.ModeloVehiculoDTO;
             textBoxMatricula.Text = reparacion.MatriculaVehiculoDTO;
             textBoxDescripcion.Text = reparacion.DescripcionDTO;

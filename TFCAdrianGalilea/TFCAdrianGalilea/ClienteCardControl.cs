@@ -72,13 +72,19 @@ namespace TFCAdrianGalilea
 
         private void MostrarDatos()
         {
-            lblDni.Text = $"DNI: {cliente.DniDTO}";
-            lblNombre.Text = $"Nombre: {cliente.NombreDTO} {cliente.ApellidoDTO}";
-            lblCorreo.Text = $"Correo: {cliente.CorreoElectronicoDTO}";
-            lblTelefono.Text = $"Teléfono: {cliente.TelefonoDTO}";
-            lblDomicilio.Text = $"Domicilio: {cliente.DomicilioDTO}";
-            lblCodigoPostal.Text = $"CP: {cliente.CodigoPostalDTO}";
+            lblDni.Text = $"DNI: {MostrarTexto(cliente.DniDTO)}";
+            lblNombre.Text = $"Nombre: {MostrarTexto(cliente.NombreDTO)} {MostrarTexto(cliente.ApellidoDTO)}";
+            lblCorreo.Text = $"Correo: {MostrarTexto(cliente.CorreoElectronicoDTO)}";
+            lblTelefono.Text = $"Teléfono: {MostrarTexto(cliente.TelefonoDTO)}";
+            lblDomicilio.Text = $"Domicilio: {MostrarTexto(cliente.DomicilioDTO)}";
+            lblCodigoPostal.Text = $"CP: {MostrarTexto(cliente.CodigoPostalDTO)}";
         }
+
+        private string MostrarTexto(string valor)
+        {
+            return string.IsNullOrWhiteSpace(valor) ? "-" : valor;
+        }
+
 
         private void InitializeComponent()
         {

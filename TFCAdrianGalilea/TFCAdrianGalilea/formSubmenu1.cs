@@ -28,17 +28,33 @@ namespace TFCAdrianGalilea
         private void CargarClientes()
         {
             var controller = new ClienteController();
-            var clientes = controller.ObtenerClientes();
             flowLayoutPanel1.Controls.Clear();
+            var listaClientes = controller.ObtenerClientes();
 
-            foreach (var cliente in clientes)
+            if (listaClientes == null || !listaClientes.Any())
             {
-                var card = new ClienteCardControl(cliente);
-                card.EditarClick += Card_EditarClick;
+                Label mensaje = new Label
+                {
+                    Text = "No hay clientes para mostrar.",
+                    ForeColor = Color.White,
+                    AutoSize = true,
+                    Font = new Font("Segoe UI", 12, FontStyle.Italic),
+                    Margin = new Padding(10),
+                };
+                flowLayoutPanel1.Controls.Add(mensaje);
+                return;
+            }
+
+            foreach (var cliente in listaClientes)
+            {
+                ClienteCardControl card = new ClienteCardControl(cliente);
                 card.EliminarClick += Card_EliminarClick;
+                card.EditarClick += Card_EditarClick;
+
                 flowLayoutPanel1.Controls.Add(card);
             }
         }
+
 
         private void Card_EditarClick(object sender, string dni)
         {
@@ -55,17 +71,17 @@ namespace TFCAdrianGalilea
 
         private void Card_EliminarClick(object sender, string dni)
         {
-            if (MessageBox.Show("¿Seguro que deseas eliminar esta reparación?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("¿Seguro que deseas eliminar este cliente?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 var controller = new ClienteController();
                 if (controller.EliminarCliente(dni))
                 {
-                    MessageBox.Show("Reparación eliminada correctamente.");
+                    MessageBox.Show("Cliente eliminado correctamente.");
                     CargarClientes();
                 }
                 else
                 {
-                    MessageBox.Show("Error al eliminar la reparación.");
+                    MessageBox.Show("Error al eliminar el cliente.");
                 }
             }
         }

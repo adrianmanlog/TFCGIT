@@ -36,16 +36,19 @@ namespace TFCAdrianGalilea
             foreach (var kvp in validaciones)
             {
                 kvp.Key.TextChanged += ValidarCampos;
+                kvp.Value.Item1.ForeColor = Color.White;
             }
 
-            toolTip = new ToolTip();
-            toolTip.IsBalloon = true;
-            toolTip.ToolTipIcon = ToolTipIcon.Warning;
-            toolTip.ToolTipTitle = "DNI duplicado";
+            toolTip = new ToolTip
+            {
+                IsBalloon = true,
+                ToolTipIcon = ToolTipIcon.Warning,
+                ToolTipTitle = "DNI duplicado"
+            };
 
-            ValidarCampos(null, null);
             comboBoxDniUsuario.Text = "16636730W";
         }
+
 
         private void ValidarCampos(object sender, EventArgs e)
         {
@@ -74,6 +77,7 @@ namespace TFCAdrianGalilea
                     }
                     else
                     {
+                        label.ForeColor = Color.White;
                         label.Text = "DNI";
                         toolTip.Hide(textBoxDNI);
                     }
@@ -82,16 +86,19 @@ namespace TFCAdrianGalilea
                 if (!valido)
                 {
                     label.ForeColor = Color.Red;
+                    label.Text = ObtenerTextoLabelInvalido(textBox); // Texto personalizado si lo deseas
                     todosValidos = false;
                 }
                 else
                 {
                     label.ForeColor = Color.White;
+                    label.Text = ObtenerTextoLabelCorrecto(textBox); // O "" si prefieres sin texto
                 }
             }
 
             buttonAceptar.Enabled = todosValidos;
         }
+
 
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
@@ -129,6 +136,23 @@ namespace TFCAdrianGalilea
             textBoxCorreo.Clear();
             textBoxDomicilio.Clear();
             textBoxCodPostal.Clear();
+        }
+        private string ObtenerTextoLabelInvalido(TextBox textBox)
+        {
+            if (textBox == textBoxDNI) return "DNI inválido";
+            if (textBox == textBoxCorreo) return "Correo inválido";
+            if (textBox == textBoxTelefono) return "Teléfono inválido";
+            if (textBox == textBoxCodPostal) return "Código postal inválido";
+            return "Formato incorrecto";
+        }
+
+        private string ObtenerTextoLabelCorrecto(TextBox textBox)
+        {
+            if (textBox == textBoxDNI) return "DNI";
+            if (textBox == textBoxCorreo) return "Correo";
+            if (textBox == textBoxTelefono) return "Teléfono";
+            if (textBox == textBoxCodPostal) return "Código Postal";
+            return "";
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)

@@ -43,7 +43,7 @@
             this.textBoxContraseña.Location = new System.Drawing.Point(92, 237);
             this.textBoxContraseña.Name = "textBoxContraseña";
             this.textBoxContraseña.Size = new System.Drawing.Size(181, 20);
-            this.textBoxContraseña.TabIndex = 55;
+            this.textBoxContraseña.TabIndex = 2;
             // 
             // labelContraseña
             // 
@@ -70,7 +70,7 @@
             this.buttonAceptar.Location = new System.Drawing.Point(61, 326);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(75, 23);
-            this.buttonAceptar.TabIndex = 52;
+            this.buttonAceptar.TabIndex = 3;
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = true;
             this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
@@ -91,7 +91,7 @@
             this.textBoxDNI.Location = new System.Drawing.Point(92, 129);
             this.textBoxDNI.Name = "textBoxDNI";
             this.textBoxDNI.Size = new System.Drawing.Size(181, 20);
-            this.textBoxDNI.TabIndex = 47;
+            this.textBoxDNI.TabIndex = 1;
             // 
             // labelDNI
             // 

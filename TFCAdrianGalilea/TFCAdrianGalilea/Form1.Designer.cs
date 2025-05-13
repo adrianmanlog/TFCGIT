@@ -41,7 +41,6 @@
             this.btSubmenu2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btAcerca = new System.Windows.Forms.Button();
-            this.btAjustes = new System.Windows.Forms.Button();
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
@@ -113,9 +112,8 @@
             this.sidebar.Controls.Add(this.pnHome);
             this.sidebar.Controls.Add(this.btSubmenu1);
             this.sidebar.Controls.Add(this.btSubmenu2);
-            this.sidebar.Controls.Add(this.button4);
             this.sidebar.Controls.Add(this.btAcerca);
-            this.sidebar.Controls.Add(this.btAjustes);
+            this.sidebar.Controls.Add(this.button4);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.sidebar.Location = new System.Drawing.Point(0, 34);
@@ -176,7 +174,7 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(3, 209);
+            this.button4.Location = new System.Drawing.Point(3, 293);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(248, 76);
             this.button4.TabIndex = 3;
@@ -189,26 +187,13 @@
             this.btAcerca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.btAcerca.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAcerca.ForeColor = System.Drawing.Color.White;
-            this.btAcerca.Location = new System.Drawing.Point(3, 291);
+            this.btAcerca.Location = new System.Drawing.Point(3, 209);
             this.btAcerca.Name = "btAcerca";
             this.btAcerca.Size = new System.Drawing.Size(248, 78);
             this.btAcerca.TabIndex = 3;
-            this.btAcerca.Text = "Acerca";
+            this.btAcerca.Text = "Facturas";
             this.btAcerca.UseVisualStyleBackColor = false;
             this.btAcerca.Click += new System.EventHandler(this.btAcerca_Click);
-            // 
-            // btAjustes
-            // 
-            this.btAjustes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.btAjustes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAjustes.ForeColor = System.Drawing.Color.White;
-            this.btAjustes.Location = new System.Drawing.Point(3, 375);
-            this.btAjustes.Name = "btAjustes";
-            this.btAjustes.Size = new System.Drawing.Size(248, 76);
-            this.btAjustes.TabIndex = 3;
-            this.btAjustes.Text = "Ajustes";
-            this.btAjustes.UseVisualStyleBackColor = false;
-            this.btAjustes.Click += new System.EventHandler(this.btAjustes_Click);
             // 
             // menuTransition
             // 
@@ -254,7 +239,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btSubmenu1;
         private System.Windows.Forms.Button btSubmenu2;
-        private System.Windows.Forms.Button btAjustes;
         private System.Windows.Forms.Timer menuTransition;
         private System.Windows.Forms.Timer sidebarTransition;
     }
