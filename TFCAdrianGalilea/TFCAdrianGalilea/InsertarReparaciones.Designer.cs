@@ -126,9 +126,9 @@
             this.labelDNICliente.ForeColor = System.Drawing.Color.White;
             this.labelDNICliente.Location = new System.Drawing.Point(81, 581);
             this.labelDNICliente.Name = "labelDNICliente";
-            this.labelDNICliente.Size = new System.Drawing.Size(61, 13);
+            this.labelDNICliente.Size = new System.Drawing.Size(43, 9);
             this.labelDNICliente.TabIndex = 27;
-            this.labelDNICliente.Text = "DNI-Cliente";
+            this.labelDNICliente.Text = "DNI-Cliente*";
             // 
             // labelPrecio
             // 
@@ -136,9 +136,9 @@
             this.labelPrecio.ForeColor = System.Drawing.Color.White;
             this.labelPrecio.Location = new System.Drawing.Point(81, 494);
             this.labelPrecio.Name = "labelPrecio";
-            this.labelPrecio.Size = new System.Drawing.Size(37, 13);
+            this.labelPrecio.Size = new System.Drawing.Size(27, 9);
             this.labelPrecio.TabIndex = 25;
-            this.labelPrecio.Text = "Precio";
+            this.labelPrecio.Text = "Precio*";
             // 
             // labelModeloVehiculo
             // 
@@ -146,9 +146,9 @@
             this.labelModeloVehiculo.ForeColor = System.Drawing.Color.White;
             this.labelModeloVehiculo.Location = new System.Drawing.Point(81, 176);
             this.labelModeloVehiculo.Name = "labelModeloVehiculo";
-            this.labelModeloVehiculo.Size = new System.Drawing.Size(87, 13);
+            this.labelModeloVehiculo.Size = new System.Drawing.Size(61, 9);
             this.labelModeloVehiculo.TabIndex = 24;
-            this.labelModeloVehiculo.Text = "Modelo vehículo";
+            this.labelModeloVehiculo.Text = "Modelo vehículo*";
             // 
             // labelMatricula
             // 
@@ -156,9 +156,9 @@
             this.labelMatricula.ForeColor = System.Drawing.Color.White;
             this.labelMatricula.Location = new System.Drawing.Point(81, 255);
             this.labelMatricula.Name = "labelMatricula";
-            this.labelMatricula.Size = new System.Drawing.Size(95, 13);
+            this.labelMatricula.Size = new System.Drawing.Size(66, 9);
             this.labelMatricula.TabIndex = 23;
-            this.labelMatricula.Text = "Matricula vehículo";
+            this.labelMatricula.Text = "Matricula vehículo*";
             // 
             // labelDescripcion
             // 
@@ -166,9 +166,9 @@
             this.labelDescripcion.ForeColor = System.Drawing.Color.White;
             this.labelDescripcion.Location = new System.Drawing.Point(81, 324);
             this.labelDescripcion.Name = "labelDescripcion";
-            this.labelDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.labelDescripcion.Size = new System.Drawing.Size(45, 9);
             this.labelDescripcion.TabIndex = 22;
-            this.labelDescripcion.Text = "Descripción";
+            this.labelDescripcion.Text = "Descripción*";
             // 
             // labelFecha
             // 
@@ -176,9 +176,9 @@
             this.labelFecha.ForeColor = System.Drawing.Color.White;
             this.labelFecha.Location = new System.Drawing.Point(81, 86);
             this.labelFecha.Name = "labelFecha";
-            this.labelFecha.Size = new System.Drawing.Size(37, 13);
+            this.labelFecha.Size = new System.Drawing.Size(27, 9);
             this.labelFecha.TabIndex = 21;
-            this.labelFecha.Text = "Fecha";
+            this.labelFecha.Text = "Fecha*";
             // 
             // InsertarReparaciones
             // 

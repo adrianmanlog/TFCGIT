@@ -42,6 +42,7 @@
             this.textBoxContraseña = new System.Windows.Forms.TextBox();
             this.labelContraseña = new System.Windows.Forms.Label();
             this.buttonVerContraseña = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelInsertar
@@ -87,11 +88,11 @@
             // 
             this.labelApellido.AutoSize = true;
             this.labelApellido.ForeColor = System.Drawing.Color.White;
-            this.labelApellido.Location = new System.Drawing.Point(86, 262);
+            this.labelApellido.Location = new System.Drawing.Point(86, 268);
             this.labelApellido.Name = "labelApellido";
-            this.labelApellido.Size = new System.Drawing.Size(44, 13);
+            this.labelApellido.Size = new System.Drawing.Size(48, 13);
             this.labelApellido.TabIndex = 20;
-            this.labelApellido.Text = "Apellido";
+            this.labelApellido.Text = "Apellido*";
             // 
             // labelCorreo
             // 
@@ -107,9 +108,9 @@
             // 
             this.labelNombre.AutoSize = true;
             this.labelNombre.ForeColor = System.Drawing.Color.White;
-            this.labelNombre.Location = new System.Drawing.Point(86, 172);
+            this.labelNombre.Location = new System.Drawing.Point(86, 183);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(44, 13);
+            this.labelNombre.Size = new System.Drawing.Size(29, 9);
             this.labelNombre.TabIndex = 18;
             this.labelNombre.Text = "Nombre";
             // 
@@ -117,11 +118,11 @@
             // 
             this.labelDNI.AutoSize = true;
             this.labelDNI.ForeColor = System.Drawing.Color.White;
-            this.labelDNI.Location = new System.Drawing.Point(86, 96);
+            this.labelDNI.Location = new System.Drawing.Point(86, 94);
             this.labelDNI.Name = "labelDNI";
-            this.labelDNI.Size = new System.Drawing.Size(26, 13);
+            this.labelDNI.Size = new System.Drawing.Size(30, 13);
             this.labelDNI.TabIndex = 17;
-            this.labelDNI.Text = "DNI";
+            this.labelDNI.Text = "DNI*";
             // 
             // buttonCancelar
             // 
@@ -154,11 +155,12 @@
             // 
             this.labelContraseña.AutoSize = true;
             this.labelContraseña.ForeColor = System.Drawing.Color.White;
-            this.labelContraseña.Location = new System.Drawing.Point(86, 428);
+            this.labelContraseña.Location = new System.Drawing.Point(86, 423);
             this.labelContraseña.Name = "labelContraseña";
-            this.labelContraseña.Size = new System.Drawing.Size(61, 13);
+            this.labelContraseña.Size = new System.Drawing.Size(65, 13);
             this.labelContraseña.TabIndex = 41;
-            this.labelContraseña.Text = "Contraseña";
+            this.labelContraseña.Text = "Contraseña*";
+            this.labelContraseña.Click += new System.EventHandler(this.labelContraseña_Click);
             // 
             // buttonVerContraseña
             // 
@@ -169,12 +171,23 @@
             this.buttonVerContraseña.UseVisualStyleBackColor = true;
             this.buttonVerContraseña.Click += new System.EventHandler(this.buttonVerContraseña_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(83, 478);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(234, 13);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "Min 8 carac, num o carac especial, min 1 mayus";
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(353, 592);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonVerContraseña);
             this.Controls.Add(this.textBoxContraseña);
             this.Controls.Add(this.labelContraseña);
@@ -212,5 +225,6 @@
         private System.Windows.Forms.TextBox textBoxContraseña;
         private System.Windows.Forms.Label labelContraseña;
         private System.Windows.Forms.Button buttonVerContraseña;
+        private System.Windows.Forms.Label label1;
     }
 }

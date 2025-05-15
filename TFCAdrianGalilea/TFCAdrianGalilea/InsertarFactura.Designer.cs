@@ -84,9 +84,9 @@
             this.labelIDReparacion.ForeColor = System.Drawing.Color.White;
             this.labelIDReparacion.Location = new System.Drawing.Point(84, 225);
             this.labelIDReparacion.Name = "labelIDReparacion";
-            this.labelIDReparacion.Size = new System.Drawing.Size(76, 13);
+            this.labelIDReparacion.Size = new System.Drawing.Size(53, 9);
             this.labelIDReparacion.TabIndex = 27;
-            this.labelIDReparacion.Text = "ID-Reparacion";
+            this.labelIDReparacion.Text = "ID-Reparacion*";
             // 
             // labelFecha
             // 
@@ -112,9 +112,9 @@
             this.labelDNICliente.ForeColor = System.Drawing.Color.White;
             this.labelDNICliente.Location = new System.Drawing.Point(84, 147);
             this.labelDNICliente.Name = "labelDNICliente";
-            this.labelDNICliente.Size = new System.Drawing.Size(61, 13);
+            this.labelDNICliente.Size = new System.Drawing.Size(43, 9);
             this.labelDNICliente.TabIndex = 39;
-            this.labelDNICliente.Text = "DNI-Cliente";
+            this.labelDNICliente.Text = "DNI-Cliente*";
             // 
             // dateTimePickerFecha
             // 

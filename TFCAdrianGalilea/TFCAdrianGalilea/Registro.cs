@@ -146,5 +146,9 @@ namespace TFCAdrianGalilea
             }
         }
 
+        private void labelContraseña_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

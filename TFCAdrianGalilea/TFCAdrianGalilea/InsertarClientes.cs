@@ -18,7 +18,7 @@ namespace TFCAdrianGalilea
         public InsertarClientes()
         {
             InitializeComponent();
-
+            buttonAceptar.Enabled = false;
             clienteController = new ClienteController();
 
             dnisExistentes = clienteController.ObtenerClientes()

@@ -55,9 +55,9 @@
             this.labelDNI.ForeColor = System.Drawing.Color.White;
             this.labelDNI.Location = new System.Drawing.Point(81, 73);
             this.labelDNI.Name = "labelDNI";
-            this.labelDNI.Size = new System.Drawing.Size(26, 13);
+            this.labelDNI.Size = new System.Drawing.Size(20, 9);
             this.labelDNI.TabIndex = 0;
-            this.labelDNI.Text = "DNI";
+            this.labelDNI.Text = "DNI*";
             this.labelDNI.Click += new System.EventHandler(this.labelDNI_Click);
             // 
             // labelNombre
@@ -77,9 +77,9 @@
             this.labelTelefono.ForeColor = System.Drawing.Color.White;
             this.labelTelefono.Location = new System.Drawing.Point(81, 387);
             this.labelTelefono.Name = "labelTelefono";
-            this.labelTelefono.Size = new System.Drawing.Size(49, 13);
+            this.labelTelefono.Size = new System.Drawing.Size(35, 9);
             this.labelTelefono.TabIndex = 2;
-            this.labelTelefono.Text = "Telefono";
+            this.labelTelefono.Text = "Telefono*";
             this.labelTelefono.Click += new System.EventHandler(this.labelTelefono_Click);
             // 
             // labelCorreo
@@ -88,9 +88,9 @@
             this.labelCorreo.ForeColor = System.Drawing.Color.White;
             this.labelCorreo.Location = new System.Drawing.Point(81, 318);
             this.labelCorreo.Name = "labelCorreo";
-            this.labelCorreo.Size = new System.Drawing.Size(94, 13);
+            this.labelCorreo.Size = new System.Drawing.Size(65, 9);
             this.labelCorreo.TabIndex = 3;
-            this.labelCorreo.Text = "Correo Electronico";
+            this.labelCorreo.Text = "Correo Electronico*";
             this.labelCorreo.Click += new System.EventHandler(this.labelCorreo_Click);
             // 
             // labelApellido
@@ -121,9 +121,9 @@
             this.labelCodPostal.ForeColor = System.Drawing.Color.White;
             this.labelCodPostal.Location = new System.Drawing.Point(81, 538);
             this.labelCodPostal.Name = "labelCodPostal";
-            this.labelCodPostal.Size = new System.Drawing.Size(58, 13);
+            this.labelCodPostal.Size = new System.Drawing.Size(41, 9);
             this.labelCodPostal.TabIndex = 6;
-            this.labelCodPostal.Text = "Cod Postal";
+            this.labelCodPostal.Text = "Cod Postal*";
             this.labelCodPostal.Click += new System.EventHandler(this.labelCodPostal_Click);
             // 
             // label7
@@ -132,7 +132,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(81, 615);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 13);
+            this.label7.Size = new System.Drawing.Size(43, 9);
             this.label7.TabIndex = 7;
             this.label7.Text = "DNI-Usuario";
             this.label7.Click += new System.EventHandler(this.label7_Click);
