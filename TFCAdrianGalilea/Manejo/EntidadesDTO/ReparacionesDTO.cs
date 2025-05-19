@@ -33,7 +33,7 @@ namespace Manejo.EntidadesDTO
 
         public ReparacionDTO(int id_reparacion, DateTime fecha, string modelo_vehiculo,string matricula_vehiculo, string descripcion, decimal precio, string dni_cliente)
         {
-            IdReparacionDTO = id_reparacion; // ← AÑADE ESTO
+            IdReparacionDTO = id_reparacion;
             FechaDTO = fecha;
             ModeloVehiculoDTO = modelo_vehiculo;
             MatriculaVehiculoDTO = matricula_vehiculo;
