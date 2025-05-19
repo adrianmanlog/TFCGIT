@@ -43,7 +43,7 @@ namespace TFCAdrianGalilea
 
             var listaReparaciones = reparacionesController.ObtenerReparaciones();
             comboBoxIDReparacion.DataSource = listaReparaciones
-                .Select(r => new { Id = r.Id_reparacion })
+                .Select(r => new { Id = r.IdReparacionDTO })
                 .ToList();
             comboBoxIDReparacion.DisplayMember = "Id";
             comboBoxIDReparacion.ValueMember = "Id";

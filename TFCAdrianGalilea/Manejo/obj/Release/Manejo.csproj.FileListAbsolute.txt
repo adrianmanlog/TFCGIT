@@ -1,0 +1,16 @@
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\Manejo.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\Manejo.pdb
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\BouncyCastle.Cryptography.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\Datos.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\itextsharp.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\EntityFramework.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\Datos.pdb
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\Datos.dll.config
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\BouncyCastle.Cryptography.xml
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\itextsharp.xml
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\bin\Release\EntityFramework.xml
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\obj\Release\Manejo.csproj.AssemblyReference.cache
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\obj\Release\Manejo.csproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\obj\Release\Manejo.csproj.Up2Date
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\obj\Release\Manejo.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Manejo\obj\Release\Manejo.pdb

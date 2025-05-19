@@ -1,0 +1,16 @@
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\Datos.dll.config
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\Datos.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\Datos.pdb
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\BouncyCastle.Cryptography.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\EntityFramework.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\itextsharp.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\BouncyCastle.Cryptography.xml
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\EntityFramework.xml
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\bin\Release\itextsharp.xml
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\obj\Release\Datos.csproj.AssemblyReference.cache
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\obj\Release\Datos.csproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\obj\Release\Datos.csproj.Up2Date
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\obj\Release\Datos.dll
+C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\Datos\obj\Release\Datos.pdb
