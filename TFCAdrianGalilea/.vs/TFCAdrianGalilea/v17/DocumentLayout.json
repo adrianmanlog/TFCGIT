@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\tfcadriangalilea\\insertarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\tfcadriangalilea\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|c:\\users\\adria\\desktop\\tfcgit\\tfcadriangalilea\\tfcadriangalilea\\insertarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\insertarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,16 +15,12 @@
       "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\insertarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|c:\\users\\adria\\desktop\\tfcgit\\tfcadriangalilea\\tfcadriangalilea\\insertarreparaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\tfcadriangalilea\\insertarreparaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\insertarreparaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\tfcadriangalilea\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\tfcadriangalilea\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B740E21-15D0-4F5E-8350-87821F452331}|Manejo\\Manejo.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\manejo\\entidadesdto\\reparacionesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,15 +31,15 @@
       "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\insertarreparaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57BF26B9-4000-45B4-8142-187FD5D0A791}|Datos\\Datos.csproj|c:\\users\\adria\\desktop\\tfcgit\\tfcadriangalilea\\datos\\infraestructure\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57BF26B9-4000-45B4-8142-187FD5D0A791}|Datos\\Datos.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\datos\\infraestructure\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57BF26B9-4000-45B4-8142-187FD5D0A791}|Datos\\Datos.csproj|solutionrelative:datos\\infraestructure\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57BF26B9-4000-45B4-8142-187FD5D0A791}|Datos\\Datos.csproj|c:\\users\\adria\\desktop\\tfcgit\\tfcadriangalilea\\datos\\repositorios\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57BF26B9-4000-45B4-8142-187FD5D0A791}|Datos\\Datos.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\datos\\repositorios\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57BF26B9-4000-45B4-8142-187FD5D0A791}|Datos\\Datos.csproj|solutionrelative:datos\\repositorios\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B740E21-15D0-4F5E-8350-87821F452331}|Manejo\\Manejo.csproj|c:\\users\\adria\\desktop\\tfcgit\\tfcadriangalilea\\manejo\\manejadores\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B740E21-15D0-4F5E-8350-87821F452331}|Manejo\\Manejo.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\manejo\\manejadores\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B740E21-15D0-4F5E-8350-87821F452331}|Manejo\\Manejo.csproj|solutionrelative:manejo\\manejadores\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,7 +67,7 @@
       "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|c:\\users\\adria\\desktop\\tfcgit\\tfcadriangalilea\\tfcadriangalilea\\modificarfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\tfcadriangalilea\\modificarfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94693AF3-E51C-4E39-88DA-EF0A0434033C}|TFCAdrianGalilea\\TFCAdrianGalilea.csproj|solutionrelative:tfcadriangalilea\\modificarfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -146,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
@@ -159,8 +159,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T13:58:34.151Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -172,8 +171,7 @@
               "RelativeToolTip": "Datos\\Infraestructure\\Usuarios.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:44:36.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T12:44:36.662Z"
             },
             {
               "$type": "Document",
@@ -185,8 +183,7 @@
               "RelativeToolTip": "Datos\\Repositorios\\UsuariosRepository.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAA2wGMAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:43:49.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T12:43:49.265Z"
             },
             {
               "$type": "Document",
@@ -198,12 +195,11 @@
               "RelativeToolTip": "Manejo\\Manejadores\\UsuarioController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:43:10.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T12:43:10.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "InsertarReparaciones.cs",
               "DocumentMoniker": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\InsertarReparaciones.cs",
               "RelativeDocumentMoniker": "TFCAdrianGalilea\\InsertarReparaciones.cs",
@@ -211,8 +207,7 @@
               "RelativeToolTip": "TFCAdrianGalilea\\InsertarReparaciones.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAowDsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:24:04.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T12:24:04.494Z"
             },
             {
               "$type": "Document",
@@ -223,8 +218,7 @@
               "ToolTip": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\InsertarReparaciones.cs [Dise\u00F1o]",
               "RelativeToolTip": "TFCAdrianGalilea\\InsertarReparaciones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:36:06.02Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-12T13:36:06.02Z"
             },
             {
               "$type": "Document",
@@ -236,8 +230,7 @@
               "RelativeToolTip": "Manejo\\EntidadesDTO\\ReparacionesDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T12:32:16.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T12:32:16.203Z"
             },
             {
               "$type": "Document",
@@ -249,8 +242,7 @@
               "RelativeToolTip": "TFCAdrianGalilea\\Form1.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAqwDUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:57:55.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T13:57:55.956Z"
             },
             {
               "$type": "Document",
@@ -277,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "InsertarClientes.cs",
               "DocumentMoniker": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\InsertarClientes.cs",
               "RelativeDocumentMoniker": "TFCAdrianGalilea\\InsertarClientes.cs",
@@ -290,19 +282,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "InsertarClientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\InsertarClientes.cs",
               "RelativeDocumentMoniker": "TFCAdrianGalilea\\InsertarClientes.cs",
               "ToolTip": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\InsertarClientes.cs [Dise\u00F1o]",
               "RelativeToolTip": "TFCAdrianGalilea\\InsertarClientes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T14:19:45.705Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-15T14:19:45.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Registro.cs",
               "DocumentMoniker": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\Registro.cs",
               "RelativeDocumentMoniker": "TFCAdrianGalilea\\Registro.cs",
@@ -315,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Registro.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\Registro.cs",
               "RelativeDocumentMoniker": "TFCAdrianGalilea\\Registro.cs",
@@ -347,8 +338,7 @@
               "RelativeToolTip": "TFCAdrianGalilea\\ClienteCardControl.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T12:53:51.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T12:53:51.495Z"
             },
             {
               "$type": "Document",
@@ -359,8 +349,7 @@
               "ToolTip": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\ClienteCardControl.cs [Dise\u00F1o]",
               "RelativeToolTip": "TFCAdrianGalilea\\ClienteCardControl.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T12:53:49.997Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-13T12:53:49.997Z"
             },
             {
               "$type": "Document",
@@ -371,8 +360,7 @@
               "ToolTip": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "TFCAdrianGalilea\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:57:53.929Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-12T13:57:53.929Z"
             },
             {
               "$type": "Document",
@@ -384,8 +372,7 @@
               "RelativeToolTip": "TFCAdrianGalilea\\ModificarReparaciones.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:36:37.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T13:36:37.561Z"
             },
             {
               "$type": "Document",
@@ -396,8 +383,7 @@
               "ToolTip": "C:\\Users\\adria\\Desktop\\TFCGIT\\TFCAdrianGalilea\\TFCAdrianGalilea\\ModificarReparaciones.cs [Dise\u00F1o]",
               "RelativeToolTip": "TFCAdrianGalilea\\ModificarReparaciones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:36:37.076Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-12T13:36:37.076Z"
             },
             {
               "$type": "Document",
@@ -409,8 +395,7 @@
               "RelativeToolTip": "TFCAdrianGalilea\\ModificarFactura.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAawDQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:36:33.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T13:36:33.426Z"
             },
             {
               "$type": "Document",

@@ -61,28 +61,28 @@
             this.textBoxCorreo.Location = new System.Drawing.Point(89, 368);
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(181, 20);
-            this.textBoxCorreo.TabIndex = 24;
+            this.textBoxCorreo.TabIndex = 4;
             // 
             // textBoxApellido
             // 
             this.textBoxApellido.Location = new System.Drawing.Point(89, 299);
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.Size = new System.Drawing.Size(181, 20);
-            this.textBoxApellido.TabIndex = 23;
+            this.textBoxApellido.TabIndex = 3;
             // 
             // textBoxNombre
             // 
             this.textBoxNombre.Location = new System.Drawing.Point(89, 215);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(181, 20);
-            this.textBoxNombre.TabIndex = 22;
+            this.textBoxNombre.TabIndex = 2;
             // 
             // textBoxDNI
             // 
             this.textBoxDNI.Location = new System.Drawing.Point(89, 125);
             this.textBoxDNI.Name = "textBoxDNI";
             this.textBoxDNI.Size = new System.Drawing.Size(181, 20);
-            this.textBoxDNI.TabIndex = 21;
+            this.textBoxDNI.TabIndex = 1;
             // 
             // labelApellido
             // 
@@ -110,7 +110,7 @@
             this.labelNombre.ForeColor = System.Drawing.Color.White;
             this.labelNombre.Location = new System.Drawing.Point(86, 183);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(29, 9);
+            this.labelNombre.Size = new System.Drawing.Size(44, 13);
             this.labelNombre.TabIndex = 18;
             this.labelNombre.Text = "Nombre";
             // 
@@ -129,7 +129,7 @@
             this.buttonCancelar.Location = new System.Drawing.Point(216, 512);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelar.TabIndex = 40;
+            this.buttonCancelar.TabIndex = 8;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
@@ -139,7 +139,7 @@
             this.buttonAceptar.Location = new System.Drawing.Point(55, 512);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(75, 23);
-            this.buttonAceptar.TabIndex = 39;
+            this.buttonAceptar.TabIndex = 7;
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = true;
             this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
@@ -149,7 +149,7 @@
             this.textBoxContraseña.Location = new System.Drawing.Point(89, 455);
             this.textBoxContraseña.Name = "textBoxContraseña";
             this.textBoxContraseña.Size = new System.Drawing.Size(181, 20);
-            this.textBoxContraseña.TabIndex = 42;
+            this.textBoxContraseña.TabIndex = 5;
             // 
             // labelContraseña
             // 
@@ -167,7 +167,7 @@
             this.buttonVerContraseña.Location = new System.Drawing.Point(287, 452);
             this.buttonVerContraseña.Name = "buttonVerContraseña";
             this.buttonVerContraseña.Size = new System.Drawing.Size(30, 23);
-            this.buttonVerContraseña.TabIndex = 57;
+            this.buttonVerContraseña.TabIndex = 6;
             this.buttonVerContraseña.UseVisualStyleBackColor = true;
             this.buttonVerContraseña.Click += new System.EventHandler(this.buttonVerContraseña_Click);
             // 
