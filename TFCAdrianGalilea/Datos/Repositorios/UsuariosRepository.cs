@@ -95,5 +95,14 @@ namespace Datos.Repositorios
                 return contexto.Usuarios.Select(u => u.dni).ToList();
             }
         }
+        public List<string> ObtenerCorreosUsuarios()
+        {
+            using (var contexto = new reparaciones_gorostiagaEntities())
+            {
+                return contexto.Usuarios
+                              .Select(u => u.correo_electronico)
+                              .ToList();
+            }
+        }
     }
 }

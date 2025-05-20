@@ -54,6 +54,11 @@ namespace Manejo.Manejadores
         {
             return repo.ObtenerDnisUsuarios();
         }
+        public List<string> ObtenerCorreosUsuarios()
+        {
+            return repo.ObtenerCorreosUsuarios();
+        }
+
         public bool ValidarCredenciales(string dni, string contraseña)
         {
             var usuarios = repo.ObtenerUsuarios();

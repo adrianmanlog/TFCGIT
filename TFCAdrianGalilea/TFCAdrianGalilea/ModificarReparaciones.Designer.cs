@@ -35,7 +35,6 @@
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.textBoxMatricula = new System.Windows.Forms.TextBox();
             this.textBoxModeloVehiculo = new System.Windows.Forms.TextBox();
-            this.textBoxfecha = new System.Windows.Forms.TextBox();
             this.labelDNICliente = new System.Windows.Forms.Label();
             this.labelPrecio = new System.Windows.Forms.Label();
             this.labelModeloVehiculo = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@
             this.labelDescripcion = new System.Windows.Forms.Label();
             this.labelFecha = new System.Windows.Forms.Label();
             this.labelModificar = new System.Windows.Forms.Label();
+            this.dateTimePickerfecha = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // buttonCancelar
@@ -101,13 +101,6 @@
             this.textBoxModeloVehiculo.Name = "textBoxModeloVehiculo";
             this.textBoxModeloVehiculo.Size = new System.Drawing.Size(181, 20);
             this.textBoxModeloVehiculo.TabIndex = 46;
-            // 
-            // textBoxfecha
-            // 
-            this.textBoxfecha.Location = new System.Drawing.Point(92, 126);
-            this.textBoxfecha.Name = "textBoxfecha";
-            this.textBoxfecha.Size = new System.Drawing.Size(181, 20);
-            this.textBoxfecha.TabIndex = 45;
             // 
             // labelDNICliente
             // 
@@ -180,12 +173,20 @@
             this.labelModificar.TabIndex = 38;
             this.labelModificar.Text = "Modificar Reparacion";
             // 
+            // dateTimePickerfecha
+            // 
+            this.dateTimePickerfecha.Location = new System.Drawing.Point(92, 124);
+            this.dateTimePickerfecha.Name = "dateTimePickerfecha";
+            this.dateTimePickerfecha.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerfecha.TabIndex = 53;
+            // 
             // ModificarReparaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(353, 746);
+            this.Controls.Add(this.dateTimePickerfecha);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.comboBoxDniCLiente);
@@ -193,7 +194,6 @@
             this.Controls.Add(this.textBoxDescripcion);
             this.Controls.Add(this.textBoxMatricula);
             this.Controls.Add(this.textBoxModeloVehiculo);
-            this.Controls.Add(this.textBoxfecha);
             this.Controls.Add(this.labelDNICliente);
             this.Controls.Add(this.labelPrecio);
             this.Controls.Add(this.labelModeloVehiculo);
@@ -218,7 +218,6 @@
         private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.TextBox textBoxMatricula;
         private System.Windows.Forms.TextBox textBoxModeloVehiculo;
-        private System.Windows.Forms.TextBox textBoxfecha;
         private System.Windows.Forms.Label labelDNICliente;
         private System.Windows.Forms.Label labelPrecio;
         private System.Windows.Forms.Label labelModeloVehiculo;
@@ -226,5 +225,6 @@
         private System.Windows.Forms.Label labelDescripcion;
         private System.Windows.Forms.Label labelFecha;
         private System.Windows.Forms.Label labelModificar;
+        private System.Windows.Forms.DateTimePicker dateTimePickerfecha;
     }
 }

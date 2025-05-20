@@ -89,9 +89,7 @@ namespace TFCAdrianGalilea
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            // 
-            // ClienteCardControl
-            // 
+
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.Name = "ClienteCardControl";
             this.ResumeLayout(false);

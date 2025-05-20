@@ -71,7 +71,6 @@ namespace TFCAdrianGalilea
                     {
                         label.ForeColor = Color.Red;
                         label.Text = "DNI (ya existe)";
-                        toolTip.Show("Este DNI ya está registrado en la base de datos.", textBoxDNI, 0, -40, 3000);
                         todosValidos = false;
                         continue;
                     }
@@ -86,13 +85,13 @@ namespace TFCAdrianGalilea
                 if (!valido)
                 {
                     label.ForeColor = Color.Red;
-                    label.Text = ObtenerTextoLabelInvalido(textBox); // Texto personalizado si lo deseas
+                    label.Text = ObtenerTextoLabelInvalido(textBox); 
                     todosValidos = false;
                 }
                 else
                 {
                     label.ForeColor = Color.White;
-                    label.Text = ObtenerTextoLabelCorrecto(textBox); // O "" si prefieres sin texto
+                    label.Text = ObtenerTextoLabelCorrecto(textBox);
                 }
             }
 

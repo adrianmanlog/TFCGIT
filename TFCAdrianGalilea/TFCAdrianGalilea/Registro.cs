@@ -11,6 +11,7 @@ namespace TFCAdrianGalilea
     public partial class Registro : Form
     {
         private HashSet<string> dnisUsuariosExistentes;
+        private HashSet<string> correosUsuariosExistentes;
         private Dictionary<TextBox, (Label, string)> validacionesRegistro;
 
         public Registro()
@@ -19,10 +20,12 @@ namespace TFCAdrianGalilea
 
             textBoxContraseña.UseSystemPasswordChar = true;
             buttonVerContraseña.Text = "👁️";
-            
+
 
             var usuarioController = new UsuarioController();
             dnisUsuariosExistentes = usuarioController.ObtenerDnisUsuarios().ToHashSet(StringComparer.OrdinalIgnoreCase);
+            correosUsuariosExistentes = usuarioController.ObtenerCorreosUsuarios().ToHashSet(StringComparer.OrdinalIgnoreCase);
+
 
             validacionesRegistro = new Dictionary<TextBox, (Label, string)>
             {
@@ -77,6 +80,24 @@ namespace TFCAdrianGalilea
                         label.ForeColor = Color.White;
                     }
                 }
+                if (textBox == textBoxCorreo && valido)
+                {
+                    bool correoDuplicado = correosUsuariosExistentes.Contains(texto);
+
+                    if (correoDuplicado)
+                    {
+                        label.ForeColor = Color.Red;
+                        label.Text = "Correo (ya existe)";
+                        todosValidos = false;
+                        continue;
+                    }
+                    else
+                    {
+                        label.Text = "Correo";
+                        label.ForeColor = Color.White;
+                    }
+                }
+
 
                 if (!valido)
                 {

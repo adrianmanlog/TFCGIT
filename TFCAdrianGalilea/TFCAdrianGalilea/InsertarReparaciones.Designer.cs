@@ -36,13 +36,13 @@
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.textBoxMatricula = new System.Windows.Forms.TextBox();
             this.textBoxModeloVehiculo = new System.Windows.Forms.TextBox();
-            this.textBoxfecha = new System.Windows.Forms.TextBox();
             this.labelDNICliente = new System.Windows.Forms.Label();
             this.labelPrecio = new System.Windows.Forms.Label();
             this.labelModeloVehiculo = new System.Windows.Forms.Label();
             this.labelMatricula = new System.Windows.Forms.Label();
             this.labelDescripcion = new System.Windows.Forms.Label();
             this.labelFecha = new System.Windows.Forms.Label();
+            this.dateTimePickerfecha = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // labelInsertar
@@ -113,20 +113,13 @@
             this.textBoxModeloVehiculo.Size = new System.Drawing.Size(181, 20);
             this.textBoxModeloVehiculo.TabIndex = 30;
             // 
-            // textBoxfecha
-            // 
-            this.textBoxfecha.Location = new System.Drawing.Point(84, 129);
-            this.textBoxfecha.Name = "textBoxfecha";
-            this.textBoxfecha.Size = new System.Drawing.Size(181, 20);
-            this.textBoxfecha.TabIndex = 29;
-            // 
             // labelDNICliente
             // 
             this.labelDNICliente.AutoSize = true;
             this.labelDNICliente.ForeColor = System.Drawing.Color.White;
             this.labelDNICliente.Location = new System.Drawing.Point(81, 581);
             this.labelDNICliente.Name = "labelDNICliente";
-            this.labelDNICliente.Size = new System.Drawing.Size(43, 9);
+            this.labelDNICliente.Size = new System.Drawing.Size(65, 13);
             this.labelDNICliente.TabIndex = 27;
             this.labelDNICliente.Text = "DNI-Cliente*";
             // 
@@ -136,7 +129,7 @@
             this.labelPrecio.ForeColor = System.Drawing.Color.White;
             this.labelPrecio.Location = new System.Drawing.Point(81, 494);
             this.labelPrecio.Name = "labelPrecio";
-            this.labelPrecio.Size = new System.Drawing.Size(27, 9);
+            this.labelPrecio.Size = new System.Drawing.Size(41, 13);
             this.labelPrecio.TabIndex = 25;
             this.labelPrecio.Text = "Precio*";
             // 
@@ -146,7 +139,7 @@
             this.labelModeloVehiculo.ForeColor = System.Drawing.Color.White;
             this.labelModeloVehiculo.Location = new System.Drawing.Point(81, 176);
             this.labelModeloVehiculo.Name = "labelModeloVehiculo";
-            this.labelModeloVehiculo.Size = new System.Drawing.Size(61, 9);
+            this.labelModeloVehiculo.Size = new System.Drawing.Size(91, 13);
             this.labelModeloVehiculo.TabIndex = 24;
             this.labelModeloVehiculo.Text = "Modelo vehículo*";
             // 
@@ -156,7 +149,7 @@
             this.labelMatricula.ForeColor = System.Drawing.Color.White;
             this.labelMatricula.Location = new System.Drawing.Point(81, 255);
             this.labelMatricula.Name = "labelMatricula";
-            this.labelMatricula.Size = new System.Drawing.Size(66, 9);
+            this.labelMatricula.Size = new System.Drawing.Size(99, 13);
             this.labelMatricula.TabIndex = 23;
             this.labelMatricula.Text = "Matricula vehículo*";
             // 
@@ -166,7 +159,7 @@
             this.labelDescripcion.ForeColor = System.Drawing.Color.White;
             this.labelDescripcion.Location = new System.Drawing.Point(81, 324);
             this.labelDescripcion.Name = "labelDescripcion";
-            this.labelDescripcion.Size = new System.Drawing.Size(45, 9);
+            this.labelDescripcion.Size = new System.Drawing.Size(67, 13);
             this.labelDescripcion.TabIndex = 22;
             this.labelDescripcion.Text = "Descripción*";
             // 
@@ -176,9 +169,16 @@
             this.labelFecha.ForeColor = System.Drawing.Color.White;
             this.labelFecha.Location = new System.Drawing.Point(81, 86);
             this.labelFecha.Name = "labelFecha";
-            this.labelFecha.Size = new System.Drawing.Size(27, 9);
+            this.labelFecha.Size = new System.Drawing.Size(41, 13);
             this.labelFecha.TabIndex = 21;
             this.labelFecha.Text = "Fecha*";
+            // 
+            // dateTimePickerfecha
+            // 
+            this.dateTimePickerfecha.Location = new System.Drawing.Point(84, 125);
+            this.dateTimePickerfecha.Name = "dateTimePickerfecha";
+            this.dateTimePickerfecha.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerfecha.TabIndex = 38;
             // 
             // InsertarReparaciones
             // 
@@ -186,6 +186,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(353, 746);
+            this.Controls.Add(this.dateTimePickerfecha);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.comboBoxDniCLiente);
@@ -193,7 +194,6 @@
             this.Controls.Add(this.textBoxDescripcion);
             this.Controls.Add(this.textBoxMatricula);
             this.Controls.Add(this.textBoxModeloVehiculo);
-            this.Controls.Add(this.textBoxfecha);
             this.Controls.Add(this.labelDNICliente);
             this.Controls.Add(this.labelPrecio);
             this.Controls.Add(this.labelModeloVehiculo);
@@ -219,12 +219,12 @@
         private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.TextBox textBoxMatricula;
         private System.Windows.Forms.TextBox textBoxModeloVehiculo;
-        private System.Windows.Forms.TextBox textBoxfecha;
         private System.Windows.Forms.Label labelDNICliente;
         private System.Windows.Forms.Label labelPrecio;
         private System.Windows.Forms.Label labelModeloVehiculo;
         private System.Windows.Forms.Label labelMatricula;
         private System.Windows.Forms.Label labelDescripcion;
         private System.Windows.Forms.Label labelFecha;
+        private System.Windows.Forms.DateTimePicker dateTimePickerfecha;
     }
 }
