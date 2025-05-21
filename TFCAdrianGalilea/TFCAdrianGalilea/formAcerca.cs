@@ -31,6 +31,20 @@ namespace TFCAdrianGalilea
             var facturas = facturaController.ObtenerFacturas();
             flowLayoutPanel1.Controls.Clear();
 
+            if (facturas == null || !facturas.Any())
+            {
+                Label mensaje = new Label
+                {
+                    Text = "No hay facturas para mostrar.",
+                    ForeColor = Color.White,
+                    AutoSize = true,
+                    Font = new Font("Segoe UI", 12, FontStyle.Italic),
+                    Margin = new Padding(10),
+                };
+                flowLayoutPanel1.Controls.Add(mensaje);
+                return;
+            }
+
             foreach (var factura in facturas)
             {
                 var card = new FacturaCardControl(factura);

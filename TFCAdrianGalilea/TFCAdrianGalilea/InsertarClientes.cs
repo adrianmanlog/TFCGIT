@@ -96,6 +96,10 @@ namespace TFCAdrianGalilea
             }
 
             buttonAceptar.Enabled = todosValidos;
+            if (todosValidos)
+            {
+                buttonAceptar.ForeColor = Color.Green;
+            }
         }
 
 

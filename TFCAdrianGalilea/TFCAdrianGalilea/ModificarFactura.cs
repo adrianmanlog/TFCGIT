@@ -20,7 +20,6 @@ namespace TFCAdrianGalilea
             InitializeComponent();
             this.idFactura = idFactura;
 
-            // Cargar datos cuando se cargue el formulario, no en el constructor
             this.Load += ModificarFactura_Load;
 
             buttonAceptar.Click += BtnAceptar_Click;
@@ -54,14 +53,12 @@ namespace TFCAdrianGalilea
             var factura = facturaController.ObtenerFacturaPorId(idFactura);
             if (factura != null)
             {
-                // Validar que la fecha sea mayor que MinDate del DateTimePicker
                 if (factura.FechaDTO >= dateTimePickerFecha.MinDate && factura.FechaDTO <= dateTimePickerFecha.MaxDate)
                 {
                     dateTimePickerFecha.Value = factura.FechaDTO;
                 }
                 else
                 {
-                    // Si no es válida, usar la fecha actual como valor por defecto
                     dateTimePickerFecha.Value = DateTime.Now;
                 }
 

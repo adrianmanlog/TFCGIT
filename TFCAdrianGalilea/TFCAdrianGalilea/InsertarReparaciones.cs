@@ -20,14 +20,6 @@ namespace TFCAdrianGalilea
             var controladorClientes = new Manejo.Manejadores.ClienteController();
             var listaClientes = controladorClientes.ObtenerClientes();
 
-            if (listaClientes == null || !listaClientes.Any())
-            {
-                MessageBox.Show("No hay clientes activos. No se puede registrar una reparación.");
-                comboBoxDniCLiente.Enabled = false;
-                buttonAceptar.Enabled = false;
-                return;
-            }
-
             comboBoxDniCLiente.DataSource = listaClientes;
             comboBoxDniCLiente.DisplayMember = "DniDTO";
             comboBoxDniCLiente.ValueMember = "DniDTO";
@@ -59,6 +51,10 @@ namespace TFCAdrianGalilea
                 comboBoxDniCLiente.SelectedItem != null;
 
             buttonAceptar.Enabled = camposCompletos;
+            if (camposCompletos)
+            {
+                buttonAceptar.ForeColor = Color.Green;
+            }
         }
 
         private void buttonAceptar_Click(object sender, EventArgs e)

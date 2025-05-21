@@ -88,9 +88,7 @@ namespace TFCAdrianGalilea
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            // 
-            // ReparacionCardControl
-            // 
+
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.Name = "ReparacionCardControl";
             this.ResumeLayout(false);

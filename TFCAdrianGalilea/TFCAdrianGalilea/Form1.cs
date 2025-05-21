@@ -16,7 +16,6 @@ namespace TFCAdrianGalilea
         formSubmenu1 menuSubmenu1;
         formSubmenu2 menuSubmenu2;
         formAcerca formAcerca;
-        formAjustes formAjustes;
 
         public Form1()
         {
@@ -114,24 +113,6 @@ namespace TFCAdrianGalilea
         private void menuSubmenu2_FormClosed(object sender, FormClosedEventArgs e)
         {
             menuSubmenu2 = null;
-        }
-
-        private void btAjustes_Click(object sender, EventArgs e)
-        {
-            CerrarFormularios();
-            if (formAjustes == null)
-            {
-                formAjustes = new formAjustes();
-                formAjustes.FormClosed += formAjustes_FormClosed;
-                formAjustes.MdiParent = this;
-                formAjustes.Dock = DockStyle.Fill;
-                formAjustes.Show();
-            }
-        }
-
-        private void formAjustes_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            formAjustes = null;
         }
 
         private void btAcerca_Click(object sender, EventArgs e)

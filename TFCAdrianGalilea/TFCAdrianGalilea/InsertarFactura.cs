@@ -27,7 +27,6 @@ namespace TFCAdrianGalilea
 
         private void CargarDatosComboBox()
         {
-            // Cargar clientes
             var listaClientes = clienteController.ObtenerClientes();
             comboBoxDNICLiente.DataSource = listaClientes
                 .Select(c => new { Dni = c.DniDTO })
@@ -35,7 +34,6 @@ namespace TFCAdrianGalilea
             comboBoxDNICLiente.DisplayMember = "Dni";
             comboBoxDNICLiente.ValueMember = "Dni";
 
-            // Cargar reparaciones
             var listaReparaciones = reparacionesController.ObtenerReparaciones();
 
             if (listaReparaciones == null || listaReparaciones.Count == 0)
@@ -46,7 +44,7 @@ namespace TFCAdrianGalilea
             }
 
             comboBoxIDReparacion.DataSource = listaReparaciones
-                .Select(r => new { Id = r.IdReparacionDTO }) // Asegúrate de usar la propiedad correcta
+                .Select(r => new { Id = r.IdReparacionDTO })
                 .ToList();
             comboBoxIDReparacion.DisplayMember = "Id";
             comboBoxIDReparacion.ValueMember = "Id";

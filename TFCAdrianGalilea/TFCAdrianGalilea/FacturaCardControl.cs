@@ -86,8 +86,7 @@ namespace TFCAdrianGalilea
             if (factura.ReparacionDTO != null)
             {
                 lblIdReparacion.Text = $"ID Reparación: {factura.IdReparacionDTO} - {factura.ReparacionDTO.ModeloVehiculoDTO}";
-                // Puedes incluir más detalles si deseas, como:
-                // lblIdReparacion.Text += $" ({factura.ReparacionDTO.MatriculaVehiculoDTO})";
+
             }
             else
             {
@@ -107,7 +106,6 @@ namespace TFCAdrianGalilea
                     PdfWriter writer = PdfWriter.GetInstance(doc, fs);
                     doc.Open();
 
-                    // Logo
                     string logoPath = Path.Combine(Application.StartupPath, "TFCAdrianGalilea\\Resources\\Reparaciones (1).png");
                     if (File.Exists(logoPath))
                     {
@@ -117,22 +115,18 @@ namespace TFCAdrianGalilea
                         doc.Add(logo);
                     }
 
-                    // Encabezado de la empresa
                     Paragraph empresa = new Paragraph("Taller Mecánico Reparaciones Gorostiaga\nCIF: A12345678\nPolígono Industrial la Portalada, Av. Aragón, 44, 26006 Varea, La Rioja\nTel: 941234003\n\n",
                         FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12));
                     empresa.Alignment = Element.ALIGN_LEFT;
                     doc.Add(empresa);
 
-                    // Línea separadora
                     doc.Add(new LineSeparator(1f, 100f, BaseColor.GRAY, Element.ALIGN_CENTER, -2));
 
-                    // Título
                     Paragraph titulo = new Paragraph("FACTURA", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18));
                     titulo.Alignment = Element.ALIGN_CENTER;
                     titulo.SpacingAfter = 20f;
                     doc.Add(titulo);
 
-                    // Datos de la factura
                     PdfPTable tablaFactura = new PdfPTable(2);
                     tablaFactura.WidthPercentage = 100;
                     tablaFactura.SpacingAfter = 10f;
@@ -146,7 +140,6 @@ namespace TFCAdrianGalilea
 
                     doc.Add(tablaFactura);
 
-                    // Datos del cliente
                     Paragraph datosCliente = new Paragraph("Datos del Cliente", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14));
                     datosCliente.SpacingBefore = 10f;
                     datosCliente.SpacingAfter = 5f;
@@ -161,7 +154,6 @@ namespace TFCAdrianGalilea
 
                     doc.Add(tablaCliente);
 
-                    // Datos de la reparación
                     if (factura.ReparacionDTO != null)
                     {
                         Paragraph datosReparacion = new Paragraph("Detalle de Reparación", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 14));
@@ -188,7 +180,6 @@ namespace TFCAdrianGalilea
                         doc.Add(tablaReparacion);
                     }
 
-                    // Pie con agradecimiento
                     Paragraph pie = new Paragraph("\nGracias por confiar en nosotros.", FontFactory.GetFont(FontFactory.HELVETICA_OBLIQUE, 10));
                     pie.Alignment = Element.ALIGN_CENTER;
                     pie.SpacingBefore = 30f;
@@ -208,9 +199,7 @@ namespace TFCAdrianGalilea
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            // 
-            // FacturaCardControl
-            // 
+
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.Name = "FacturaCardControl";
             this.ResumeLayout(false);

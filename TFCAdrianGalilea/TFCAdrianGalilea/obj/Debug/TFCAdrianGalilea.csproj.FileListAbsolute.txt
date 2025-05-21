@@ -64,7 +64,6 @@ C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\TFCAdrianGalilea\obj\Debug\TFCAdr
 C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\TFCAdrianGalilea\obj\Debug\TFCAdrianGalilea.FacturaCardControl.resources
 C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\TFCAdrianGalilea\obj\Debug\TFCAdrianGalilea.Form1.resources
 C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\TFCAdrianGalilea\obj\Debug\TFCAdrianGalilea.formAcerca.resources
-C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\TFCAdrianGalilea\obj\Debug\TFCAdrianGalilea.formAjustes.resources
 C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\TFCAdrianGalilea\obj\Debug\TFCAdrianGalilea.formHome.resources
 C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\TFCAdrianGalilea\obj\Debug\TFCAdrianGalilea.formSubmenu1.resources
 C:\Users\adria\Desktop\TFCGIT\TFCAdrianGalilea\TFCAdrianGalilea\obj\Debug\TFCAdrianGalilea.formSubmenu2.resources

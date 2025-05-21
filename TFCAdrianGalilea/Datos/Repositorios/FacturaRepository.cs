@@ -15,7 +15,7 @@ namespace Datos.Repositorios
             {
                 using (var contexto = new reparaciones_gorostiagaEntities())
                 {
-                    facturas = contexto.Factura.Include(f => f.Reparaciones).ToList(); // <-- Cambio aquí
+                    facturas = contexto.Factura.Include(f => f.Reparaciones).ToList();
                 }
                 return facturas;
             }

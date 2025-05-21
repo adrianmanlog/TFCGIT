@@ -5,6 +5,7 @@ using System;
 using System.Windows.Forms;
 using System.Linq;
 using System.Threading;
+using System.Drawing;
 
 
 namespace TFCAdrianGalilea
@@ -28,6 +29,20 @@ namespace TFCAdrianGalilea
             var controller = new ReparacionesController();
             var reparaciones = controller.ObtenerReparaciones();
             flowLayoutPanel1.Controls.Clear();
+
+            if (reparaciones == null || !reparaciones.Any())
+            {
+                Label mensaje = new Label
+                {
+                    Text = "No hay reparaciones para mostrar.",
+                    ForeColor = Color.White,
+                    AutoSize = true,
+                    Font = new Font("Segoe UI", 12, FontStyle.Italic),
+                    Margin = new Padding(10),
+                };
+                flowLayoutPanel1.Controls.Add(mensaje);
+                return;
+            }
 
             foreach (var reparacion in reparaciones)
             {
@@ -70,6 +85,14 @@ namespace TFCAdrianGalilea
 
         private void buttonInsertarReparacion_Click(object sender, EventArgs e)
         {
+            var controladorClientes = new Manejo.Manejadores.ClienteController();
+            var listaClientes = controladorClientes.ObtenerClientes();
+            if (listaClientes == null || !listaClientes.Any())
+            {
+                MessageBox.Show("No hay clientes. No se puede registrar una reparación.");
+
+                return;
+            }
             var formInsertar = new InsertarReparaciones();
             formInsertar.FormClosed += (s, args) => CargarReparaciones();
             formInsertar.Show();

@@ -30,6 +30,7 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonInsertarReparacion = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -50,12 +51,23 @@
             this.buttonInsertarReparacion.UseVisualStyleBackColor = true;
             this.buttonInsertarReparacion.Click += new System.EventHandler(this.buttonInsertarReparacion_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(126, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(319, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "No se puede eliminar una reparación si tiene una factura asociada";
+            // 
             // formSubmenu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(543, 548);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonInsertarReparacion);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -63,6 +75,7 @@
             this.Text = "formSubmenu2";
             this.Load += new System.EventHandler(this.formSubmenu2_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,5 +83,6 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button buttonInsertarReparacion;
+        private System.Windows.Forms.Label label1;
     }
 }

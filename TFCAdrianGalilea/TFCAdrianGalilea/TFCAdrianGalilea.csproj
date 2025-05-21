@@ -81,12 +81,6 @@
     <Compile Include="formAcerca.Designer.cs">
       <DependentUpon>formAcerca.cs</DependentUpon>
     </Compile>
-    <Compile Include="formAjustes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formAjustes.Designer.cs">
-      <DependentUpon>formAjustes.cs</DependentUpon>
-    </Compile>
     <Compile Include="formHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,9 +169,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formAcerca.resx">
       <DependentUpon>formAcerca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formAjustes.resx">
-      <DependentUpon>formAjustes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
