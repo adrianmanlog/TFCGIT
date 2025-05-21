@@ -105,6 +105,15 @@ namespace TFCAdrianGalilea
 
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
+            string dniusuario = "";
+            if (comboBoxDniUsuario.Text=="" || comboBoxDniUsuario.Text == " ")
+            {
+                dniusuario = "16636730W";
+            }
+            else
+            {
+                dniusuario = comboBoxDniUsuario.Text.Trim();
+            }
             Manejo.EntidadesDTO.ClienteDTO cliente = new Manejo.EntidadesDTO.ClienteDTO
             {
                 DniDTO = textBoxDNI.Text.Trim(),
@@ -113,7 +122,8 @@ namespace TFCAdrianGalilea
                 TelefonoDTO = textBoxTelefono.Text.Trim(),
                 CorreoElectronicoDTO = textBoxCorreo.Text.Trim(),
                 DomicilioDTO = textBoxDomicilio.Text.Trim(),
-                CodigoPostalDTO = textBoxCodPostal.Text.Trim()
+                CodigoPostalDTO = textBoxCodPostal.Text.Trim(),
+                DniUsuarioDTO = dniusuario
             };
 
             Manejo.Manejadores.ClienteController clienteController = new Manejo.Manejadores.ClienteController();
