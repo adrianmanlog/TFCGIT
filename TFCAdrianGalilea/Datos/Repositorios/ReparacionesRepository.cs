@@ -12,7 +12,7 @@ namespace Datos.Repositorios
             List<Reparaciones> reparaciones = new List<Reparaciones>();
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     reparaciones = contexto.Reparaciones.ToList();
                 }
@@ -28,7 +28,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     contexto.Reparaciones.Add(reparacion);
                     contexto.SaveChanges();
@@ -45,7 +45,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var existente = contexto.Reparaciones.FirstOrDefault(r => r.id_reparacion == reparacion.id_reparacion);
                     if (existente != null)
@@ -73,7 +73,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var reparacion = contexto.Reparaciones.FirstOrDefault(r => r.id_reparacion == idReparacion);
                     if (reparacion != null)
@@ -94,7 +94,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var reparacion = contexto.Reparaciones.FirstOrDefault(r => r.id_reparacion == idReparacion);
                     return reparacion;

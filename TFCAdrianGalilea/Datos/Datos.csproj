@@ -80,9 +80,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>reparaciones_gorostiaga.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Infraestructure\sysdiagrams.cs">
-      <DependentUpon>reparaciones_gorostiaga.tt</DependentUpon>
-    </Compile>
     <Compile Include="Infraestructure\Usuarios.cs">
       <DependentUpon>reparaciones_gorostiaga.tt</DependentUpon>
     </Compile>
@@ -94,32 +91,30 @@
     <Compile Include="Repositorios\UsuariosRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="Infraestructure\reparaciones_gorostiaga.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>reparaciones_gorostiaga.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="Infraestructure\reparaciones_gorostiaga.edmx.diagram">
       <DependentUpon>reparaciones_gorostiaga.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Infraestructure\reparaciones_gorostiaga.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>reparaciones_gorostiaga.Context.cs</LastGenOutput>
       <DependentUpon>reparaciones_gorostiaga.edmx</DependentUpon>
+      <LastGenOutput>reparaciones_gorostiaga.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Infraestructure\reparaciones_gorostiaga.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>reparaciones_gorostiaga.edmx</DependentUpon>
       <LastGenOutput>reparaciones_gorostiaga.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

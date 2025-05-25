@@ -30,10 +30,10 @@ namespace Datos.Infraestructure
         public string codigo_postal { get; set; }
         public string dni_usuario { get; set; }
     
+        public virtual Usuarios Usuarios { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Factura> Factura { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reparaciones> Reparaciones { get; set; }
-        public virtual Usuarios Usuarios { get; set; }
     }
 }

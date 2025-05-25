@@ -9,14 +9,14 @@
           <Key>
             <PropertyRef Name="dni" />
           </Key>
-          <Property Name="dni" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="apellido" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="correo_electronico" Type="varchar" MaxLength="100" />
-          <Property Name="telefono" Type="varchar" MaxLength="20" />
-          <Property Name="domicilio" Type="text" />
-          <Property Name="codigo_postal" Type="varchar" MaxLength="10" />
-          <Property Name="dni_usuario" Type="varchar" MaxLength="20" />
+          <Property Name="dni" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="apellido" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="correo_electronico" Type="nvarchar" MaxLength="100" />
+          <Property Name="telefono" Type="nvarchar" MaxLength="20" />
+          <Property Name="domicilio" Type="nvarchar" MaxLength="255" />
+          <Property Name="codigo_postal" Type="nvarchar" MaxLength="10" />
+          <Property Name="dni_usuario" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Factura">
           <Key>
@@ -24,7 +24,7 @@
           </Key>
           <Property Name="id_factura" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="fecha" Type="date" Nullable="false" />
-          <Property Name="dni_cliente" Type="varchar" MaxLength="20" />
+          <Property Name="dni_cliente" Type="nvarchar" MaxLength="20" />
           <Property Name="id_reparacion" Type="int" />
         </EntityType>
         <EntityType Name="Reparaciones">
@@ -33,69 +33,23 @@
           </Key>
           <Property Name="id_reparacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="fecha" Type="date" Nullable="false" />
-          <Property Name="modelo_vehiculo" Type="varchar" MaxLength="50" />
-          <Property Name="matricula_vehiculo" Type="varchar" MaxLength="20" />
-          <Property Name="descripcion" Type="text" />
+          <Property Name="modelo_vehiculo" Type="nvarchar" MaxLength="50" />
+          <Property Name="matricula_vehiculo" Type="nvarchar" MaxLength="20" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="255" />
           <Property Name="precio" Type="decimal" Precision="10" Scale="2" />
-          <Property Name="dni_cliente" Type="varchar" MaxLength="20" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
+          <Property Name="dni_cliente" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Usuarios">
           <Key>
             <PropertyRef Name="dni" />
           </Key>
-          <Property Name="dni" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="apellido" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="correo_electronico" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="contraseña" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="dni" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="apellido" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="correo_electronico" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="contraseña" Type="nvarchar" MaxLength="100" Nullable="false" />
         </EntityType>
-        <Association Name="fk_cliente_factura">
-          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
-          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Clientes">
-              <PropertyRef Name="dni" />
-            </Principal>
-            <Dependent Role="Factura">
-              <PropertyRef Name="dni_cliente" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_cliente_reparacion">
-          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
-          <End Role="Reparaciones" Type="Self.Reparaciones" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Clientes">
-              <PropertyRef Name="dni" />
-            </Principal>
-            <Dependent Role="Reparaciones">
-              <PropertyRef Name="dni_cliente" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_reparacion_factura">
-          <End Role="Reparaciones" Type="Self.Reparaciones" Multiplicity="0..1" />
-          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Reparaciones">
-              <PropertyRef Name="id_reparacion" />
-            </Principal>
-            <Dependent Role="Factura">
-              <PropertyRef Name="id_reparacion" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_usuario">
+        <Association Name="FK_Clientes_Usuarios">
           <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
           <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -107,27 +61,62 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Facturas_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="dni" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="dni_cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Facturas_Reparaciones">
+          <End Role="Reparaciones" Type="Self.Reparaciones" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reparaciones">
+              <PropertyRef Name="id_reparacion" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="id_reparacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reparaciones_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Reparaciones" Type="Self.Reparaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="dni" />
+            </Principal>
+            <Dependent Role="Reparaciones">
+              <PropertyRef Name="dni_cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="reparaciones_gorostiagaModelStoreContainer">
           <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Reparaciones" EntityType="Self.Reparaciones" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="fk_cliente_factura" Association="Self.fk_cliente_factura">
-            <End Role="Clientes" EntitySet="Clientes" />
-            <End Role="Factura" EntitySet="Factura" />
-          </AssociationSet>
-          <AssociationSet Name="fk_cliente_reparacion" Association="Self.fk_cliente_reparacion">
-            <End Role="Clientes" EntitySet="Clientes" />
-            <End Role="Reparaciones" EntitySet="Reparaciones" />
-          </AssociationSet>
-          <AssociationSet Name="fk_reparacion_factura" Association="Self.fk_reparacion_factura">
-            <End Role="Reparaciones" EntitySet="Reparaciones" />
-            <End Role="Factura" EntitySet="Factura" />
-          </AssociationSet>
-          <AssociationSet Name="fk_usuario" Association="Self.fk_usuario">
+          <AssociationSet Name="FK_Clientes_Usuarios" Association="Self.FK_Clientes_Usuarios">
             <End Role="Usuarios" EntitySet="Usuarios" />
             <End Role="Clientes" EntitySet="Clientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Facturas_Clientes" Association="Self.FK_Facturas_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Facturas_Reparaciones" Association="Self.FK_Facturas_Reparaciones">
+            <End Role="Reparaciones" EntitySet="Reparaciones" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reparaciones_Clientes" Association="Self.FK_Reparaciones_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Reparaciones" EntitySet="Reparaciones" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -139,17 +128,17 @@
           <Key>
             <PropertyRef Name="dni" />
           </Key>
-          <Property Name="dni" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="correo_electronico" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="domicilio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="codigo_postal" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="dni_usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Factura" Relationship="Self.fk_cliente_factura" FromRole="Clientes" ToRole="Factura" />
-          <NavigationProperty Name="Reparaciones" Relationship="Self.fk_cliente_reparacion" FromRole="Clientes" ToRole="Reparaciones" />
-          <NavigationProperty Name="Usuarios" Relationship="Self.fk_usuario" FromRole="Clientes" ToRole="Usuarios" />
+          <Property Name="dni" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="correo_electronico" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="domicilio" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="codigo_postal" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="dni_usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Usuarios" Relationship="Self.FK_Clientes_Usuarios" FromRole="Clientes" ToRole="Usuarios" />
+          <NavigationProperty Name="Factura" Relationship="Self.FK_Facturas_Clientes" FromRole="Clientes" ToRole="Factura" />
+          <NavigationProperty Name="Reparaciones" Relationship="Self.FK_Reparaciones_Clientes" FromRole="Clientes" ToRole="Reparaciones" />
         </EntityType>
         <EntityType Name="Factura">
           <Key>
@@ -157,10 +146,10 @@
           </Key>
           <Property Name="id_factura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="dni_cliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="dni_cliente" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="id_reparacion" Type="Int32" />
-          <NavigationProperty Name="Clientes" Relationship="Self.fk_cliente_factura" FromRole="Factura" ToRole="Clientes" />
-          <NavigationProperty Name="Reparaciones" Relationship="Self.fk_reparacion_factura" FromRole="Factura" ToRole="Reparaciones" />
+          <NavigationProperty Name="Clientes" Relationship="Self.FK_Facturas_Clientes" FromRole="Factura" ToRole="Clientes" />
+          <NavigationProperty Name="Reparaciones" Relationship="Self.FK_Facturas_Reparaciones" FromRole="Factura" ToRole="Reparaciones" />
         </EntityType>
         <EntityType Name="Reparaciones">
           <Key>
@@ -168,60 +157,26 @@
           </Key>
           <Property Name="id_reparacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="modelo_vehiculo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="matricula_vehiculo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="modelo_vehiculo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="matricula_vehiculo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="precio" Type="Decimal" Precision="10" Scale="2" />
-          <Property Name="dni_cliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Clientes" Relationship="Self.fk_cliente_reparacion" FromRole="Reparaciones" ToRole="Clientes" />
-          <NavigationProperty Name="Factura" Relationship="Self.fk_reparacion_factura" FromRole="Reparaciones" ToRole="Factura" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="dni_cliente" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Clientes" Relationship="Self.FK_Reparaciones_Clientes" FromRole="Reparaciones" ToRole="Clientes" />
+          <NavigationProperty Name="Factura" Relationship="Self.FK_Facturas_Reparaciones" FromRole="Reparaciones" ToRole="Factura" />
         </EntityType>
         <EntityType Name="Usuarios">
           <Key>
             <PropertyRef Name="dni" />
           </Key>
-          <Property Name="dni" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="correo_electronico" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Clientes" Relationship="Self.fk_usuario" FromRole="Usuarios" ToRole="Clientes" />
+          <Property Name="dni" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="correo_electronico" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Clientes" Relationship="Self.FK_Clientes_Usuarios" FromRole="Usuarios" ToRole="Clientes" />
         </EntityType>
-        <Association Name="fk_cliente_factura">
-          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
-          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Clientes">
-              <PropertyRef Name="dni" />
-            </Principal>
-            <Dependent Role="Factura">
-              <PropertyRef Name="dni_cliente" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_cliente_reparacion">
-          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
-          <End Role="Reparaciones" Type="Self.Reparaciones" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Clientes">
-              <PropertyRef Name="dni" />
-            </Principal>
-            <Dependent Role="Reparaciones">
-              <PropertyRef Name="dni_cliente" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_usuario">
+        <Association Name="FK_Clientes_Usuarios">
           <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
           <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
           <ReferentialConstraint>
@@ -233,7 +188,31 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_reparacion_factura">
+        <Association Name="FK_Facturas_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="dni" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="dni_cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reparaciones_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Reparaciones" Type="Self.Reparaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="dni" />
+            </Principal>
+            <Dependent Role="Reparaciones">
+              <PropertyRef Name="dni_cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Facturas_Reparaciones">
           <End Role="Reparaciones" Type="Self.Reparaciones" Multiplicity="0..1" />
           <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
           <ReferentialConstraint>
@@ -245,25 +224,24 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="reparaciones_gorostiagaEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="reparaciones_gorostiagaEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Clientes" EntityType="Self.Clientes" />
           <EntitySet Name="Factura" EntityType="Self.Factura" />
           <EntitySet Name="Reparaciones" EntityType="Self.Reparaciones" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
-          <AssociationSet Name="fk_cliente_factura" Association="Self.fk_cliente_factura">
-            <End Role="Clientes" EntitySet="Clientes" />
-            <End Role="Factura" EntitySet="Factura" />
-          </AssociationSet>
-          <AssociationSet Name="fk_cliente_reparacion" Association="Self.fk_cliente_reparacion">
-            <End Role="Clientes" EntitySet="Clientes" />
-            <End Role="Reparaciones" EntitySet="Reparaciones" />
-          </AssociationSet>
-          <AssociationSet Name="fk_usuario" Association="Self.fk_usuario">
+          <AssociationSet Name="FK_Clientes_Usuarios" Association="Self.FK_Clientes_Usuarios">
             <End Role="Usuarios" EntitySet="Usuarios" />
             <End Role="Clientes" EntitySet="Clientes" />
           </AssociationSet>
-          <AssociationSet Name="fk_reparacion_factura" Association="Self.fk_reparacion_factura">
+          <AssociationSet Name="FK_Facturas_Clientes" Association="Self.FK_Facturas_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reparaciones_Clientes" Association="Self.FK_Reparaciones_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Reparaciones" EntitySet="Reparaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Facturas_Reparaciones" Association="Self.FK_Facturas_Reparaciones">
             <End Role="Reparaciones" EntitySet="Reparaciones" />
             <End Role="Factura" EntitySet="Factura" />
           </AssociationSet>
@@ -273,7 +251,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="reparaciones_gorostiagaModelStoreContainer" CdmEntityContainer="reparaciones_gorostiagaEntities">
+        <EntityContainerMapping StorageEntityContainer="reparaciones_gorostiagaModelStoreContainer" CdmEntityContainer="reparaciones_gorostiagaEntities1">
           <EntitySetMapping Name="Clientes">
             <EntityTypeMapping TypeName="reparaciones_gorostiagaModel.Clientes">
               <MappingFragment StoreEntitySet="Clientes">
@@ -308,17 +286,6 @@
                 <ScalarProperty Name="descripcion" ColumnName="descripcion" />
                 <ScalarProperty Name="precio" ColumnName="precio" />
                 <ScalarProperty Name="dni_cliente" ColumnName="dni_cliente" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="reparaciones_gorostiagaModel.sysdiagrams">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

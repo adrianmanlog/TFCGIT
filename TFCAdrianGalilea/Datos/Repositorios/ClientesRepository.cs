@@ -12,7 +12,7 @@ namespace Datos.Repositorios
             List<Clientes> clientes = new List<Clientes>();
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     clientes = contexto.Clientes.ToList();
                 }
@@ -28,7 +28,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     contexto.Clientes.Add(cliente);
                     contexto.SaveChanges();
@@ -45,7 +45,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var clienteExistente = contexto.Clientes.FirstOrDefault(c => c.dni == cliente.dni);
                     if (clienteExistente != null)
@@ -74,7 +74,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var cliente = contexto.Clientes.FirstOrDefault(c => c.dni == dni);
                     if (cliente != null)

@@ -12,7 +12,7 @@ namespace Datos.Repositorios
             List<Usuarios> usuarios = new List<Usuarios>();
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     usuarios = contexto.Usuarios.ToList();
                 }
@@ -28,7 +28,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     contexto.Usuarios.Add(usuario);
                     contexto.SaveChanges();
@@ -45,7 +45,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var existente = contexto.Usuarios.FirstOrDefault(u => u.dni == usuario.dni);
                     if (existente != null)
@@ -71,7 +71,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var usuario = contexto.Usuarios.FirstOrDefault(u => u.dni == dni);
                     if (usuario != null)
@@ -90,14 +90,14 @@ namespace Datos.Repositorios
         }
         public List<string> ObtenerDnisUsuarios()
         {
-            using (var contexto = new reparaciones_gorostiagaEntities())
+            using (var contexto = new reparaciones_gorostiagaEntities1())
             {
                 return contexto.Usuarios.Select(u => u.dni).ToList();
             }
         }
         public List<string> ObtenerCorreosUsuarios()
         {
-            using (var contexto = new reparaciones_gorostiagaEntities())
+            using (var contexto = new reparaciones_gorostiagaEntities1())
             {
                 return contexto.Usuarios
                               .Select(u => u.correo_electronico)

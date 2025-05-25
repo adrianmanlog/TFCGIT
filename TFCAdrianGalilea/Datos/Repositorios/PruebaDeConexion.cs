@@ -13,7 +13,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     List<Clientes> productos = contexto.Clientes.ToList();
                 }

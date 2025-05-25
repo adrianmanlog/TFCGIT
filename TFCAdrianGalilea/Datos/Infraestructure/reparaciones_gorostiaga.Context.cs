@@ -13,10 +13,10 @@ namespace Datos.Infraestructure
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class reparaciones_gorostiagaEntities : DbContext
+    public partial class reparaciones_gorostiagaEntities1 : DbContext
     {
-        public reparaciones_gorostiagaEntities()
-            : base("name=reparaciones_gorostiagaEntities")
+        public reparaciones_gorostiagaEntities1()
+            : base("name=reparaciones_gorostiagaEntities1")
         {
         }
     
@@ -28,7 +28,6 @@ namespace Datos.Infraestructure
         public virtual DbSet<Clientes> Clientes { get; set; }
         public virtual DbSet<Factura> Factura { get; set; }
         public virtual DbSet<Reparaciones> Reparaciones { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Usuarios> Usuarios { get; set; }
     }
 }

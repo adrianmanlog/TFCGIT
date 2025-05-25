@@ -13,7 +13,7 @@ namespace Datos.Repositorios
             List<Factura> facturas = new List<Factura>();
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     facturas = contexto.Factura.Include(f => f.Reparaciones).ToList();
                 }
@@ -29,7 +29,7 @@ namespace Datos.Repositorios
             List<Factura> facturas = new List<Factura>();
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     facturas = contexto.Factura
                         .Include(f => f.Reparaciones)
@@ -46,7 +46,7 @@ namespace Datos.Repositorios
 
         public Factura ObtenerFacturaPorId(int idFactura)
         {
-            using (var contexto = new reparaciones_gorostiagaEntities())
+            using (var contexto = new reparaciones_gorostiagaEntities1())
             {
                 return contexto.Factura
                     .Include(f => f.Reparaciones)
@@ -57,7 +57,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     contexto.Factura.Add(factura);
                     contexto.SaveChanges();
@@ -74,7 +74,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var existente = contexto.Factura.FirstOrDefault(f => f.id_factura == factura.id_factura);
                     if (existente != null)
@@ -99,7 +99,7 @@ namespace Datos.Repositorios
         {
             try
             {
-                using (var contexto = new reparaciones_gorostiagaEntities())
+                using (var contexto = new reparaciones_gorostiagaEntities1())
                 {
                     var factura = contexto.Factura.FirstOrDefault(f => f.id_factura == idFactura);
                     if (factura != null)
